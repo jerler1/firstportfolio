@@ -1,0 +1,13 @@
+/* changing the navbar to a dark green */
+.navbar-custom {
+    background-color: #4aaaa5;
+}
+.navbar-brand {
+    color: black;
+}
+.nav-link {
+    color: black;
+}
+.active a {
+    color: blue;
+}
