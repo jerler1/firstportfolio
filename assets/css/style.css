@@ -2,12 +2,33 @@
 .navbar-custom {
     background-color: #4aaaa5;
 }
-.navbar-brand {
+/* changes the brand and link color */
+.navbar-brand, .nav-link {
     color: black;
+    font-size: x-large;
 }
-.nav-link {
-    color: black;
-}
+/* changes the current web page link to blue */
 .active a {
     color: blue;
+}
+.bg {
+    height:900px;
+    background-image: url(./assets/images/ignasi.png);
+    background-size: 100%;
+}
+.prime {
+    text-decoration: underline;
+    color: #4aaaa5;
+    text-decoration color: #4aaaa5;
+}
+.leftfloat {
+    float: left;
+}
+.container {
+    background-color: white;
+    width: 700px;
+}
+.col-sm-12 img {
+    padding-right:15px;
+    padding-bottom:10px;
 }
