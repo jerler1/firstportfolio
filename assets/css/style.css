@@ -7,26 +7,22 @@
     color: black;
     font-size: x-large;
 }
-/* changes the current web page link to blue */
-.active a {
-    color: blue;
+
+body {
+    background-image: url("../images/bg.png");
 }
-.bg {
-    height:900px;
-    background-image: url(./assets/images/ignasi.png);
-    background-size: 100%;
-}
-.prime {
-    text-decoration: underline;
+.prime, hr {
     color: #4aaaa5;
-    text-decoration color: #4aaaa5;
 }
 .leftfloat {
     float: left;
 }
 .container {
     background-color: white;
+    background-size: cover;
     width: 700px;
+    margin-left: 75px;
+    margin-top: 50px;
 }
 .col-sm-12 img {
     padding-right:15px;
