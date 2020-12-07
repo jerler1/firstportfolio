@@ -1,22 +1,25 @@
 /* changing the navbar to a dark green */
-.navbar-custom {
+.navbar-custom, footer {
     background-color: #4aaaa5;
+}
+/* changing the header and hr to custom color */
+.prime, hr, footer {
+    color: #4aaaa5;
 }
 /* changes the brand and link color */
 .navbar-brand, .nav-link {
     color: black;
     font-size: x-large;
 }
-
+/* sets the bg image to the body */
 body {
     background-image: url("../images/bg.png");
 }
-.prime, hr {
-    color: #4aaaa5;
-}
+/* float css */
 .leftfloat {
     float: left;
 }
+
 .container {
     background-color: white;
     background-size: cover;
@@ -24,7 +27,20 @@ body {
     margin-left: 75px;
     margin-top: 50px;
 }
-.col-sm-12 img {
+/* padding is putting a space between picture and text */
+.aboutme img {
     padding-right:15px;
     padding-bottom:10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    border-top: solid 10px #4aaaa5;
 }

@@ -12,10 +12,11 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-      <!-- added a background image and put a container inside-->
-  <body>
-      <!-- nav bar from bootstrap modified -->
-      <!-- added navbar-custom class to change background color -->
+  <!-- added a background image and put a container inside-->
+  <!-- made the body a flex box and a flex column -->
+  <body class="d-flex flex-column">
+    <!-- nav bar from bootstrap modified -->
+    <!-- added navbar-custom class to change background color -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
       <a class="navbar-brand" href="./index.htm">John Erler</a>
       <button
@@ -30,40 +31,61 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- changed mr-auto to ml-auto to make links to the right  -->
+        <!-- changed mr-auto to ml-auto to make links to the right  -->
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                 <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <!-- using the active tag to make the active page a different color -->
-            <li class="nav-item active">
-                <a class="nav-link" href="./index.htm">About <span class="sr-only">(current)</span></a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <!-- using the active tag to make the active page a different color -->
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.htm"
+              >About <span class="sr-only">(current)</span></a
+            >
+          </li>
         </ul>
       </div>
     </nav>
-    <div class="container float-left">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="prime">About me</h1> 
-                        <hr>                                                  
-                    </div>                        
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <img src="http://placekitten.com/g/350/350" class="leftfloat">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa cum dolorem soluta optio voluptas, totam facilis quae dolorum omnis pariatur necessitatibus voluptatibus rerum accusantium aliquid voluptatum debitis delectus unde voluptatem enim iste asperiores dignissimos architecto? Dolore quibusdam architecto nobis repellat at, neque iusto? Deserunt aliquid eius placeat earum dolorum tempore reiciendis fuga nihil. Inventore harum velit blanditiis tempora libero placeat aut praesentium facere id, ducimus quod exercitationem at quisquam, accusamus impedit cum quam repellendus rerum? Commodi optio facilis iure. Commodi reiciendis doloribus sit debitis unde ullam molestiae iusto rem quas nesciunt corrupti corporis culpa placeat, illo saepe dolorem blanditiis?</p>
-                    </div>
-                </div>
-            </div>
-
+    <!-- changed the container to flex and allowing it to  fill up all available space -->
+    <!-- container has one row and one column - with two sub rows -->
+    <main class="container flex-grow-1 flex-shrink-0">
+      <div class="row">
+        <div class="col-sm-12">
+          <section class="row">
+            <article class="col-sm-12 aboutme">
+              <h1 class="prime">About me</h1>
+              <hr />
+            </article>
+          </section>
+          <section class="row">
+            <article class="col-sm-12">
+              <!-- made the image left float so the text will wrap -->
+              <img src="http://placekitten.com/g/350/350" class="leftfloat" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                culpa cum dolorem soluta optio voluptas, totam facilis quae
+                dolorum omnis pariatur necessitatibus voluptatibus rerum
+                accusantium aliquid voluptatum debitis delectus unde voluptatem
+                enim iste asperiores dignissimos architecto? Dolore quibusdam
+                architecto nobis repellat at, neque iusto? Deserunt aliquid eius
+                placeat earum dolorum tempore reiciendis fuga nihil. Inventore
+                harum velit blanditiis tempora libero placeat aut praesentium
+                facere id, ducimus quod exercitationem at quisquam, accusamus
+                impedit cum quam repellendus rerum? Commodi optio facilis iure.
+                Commodi reiciendis doloribus sit debitis unde ullam molestiae
+                iusto rem quas nesciunt corrupti corporis culpa placeat, illo
+                saepe dolorem blanditiis?
+              </p>
+            </article>
+          </section>
         </div>
-    </div>
-
+      </div>
+    </main>
+    <!-- https://bootstrapious.com/p/bootstrap-sticky-footer for the footer. -->
+    <footer class="footer flex-shrink-0">
+      <p>Copyright!</p>
+    </footer>
   </body>
 </html>
