@@ -2,14 +2,8 @@
 .navbar-custom, footer {
     background-color: #4aaaa5;
 }
-/* changing the header and hr to custom color */
-.prime, hr, footer {
-    color: #4aaaa5;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    margin-top: auto;
-    margin-bottom: auto;
-}
+/* changing the header to custom color */
+
 /* changes the brand and link color */
 .navbar-brand, .nav-link {
     font-family: 'Times New Roman', Times, serif;
@@ -20,11 +14,18 @@
 body {
     background-image: url("../images/bg.png");
 }
+hr {
+    color: #4aaaa5;
+    padding: 5px, 0px, 5px, 0px;
+}
 
 footer {
+    color: #4aaaa5;
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
+    font-size: 18px;
+    line-height: 2.5;
     justify-content: center;
-    align-items: center;
     height: 60px;
     position: fixed;
     bottom: 0;
@@ -32,29 +33,34 @@ footer {
     background-color: #666666;
     border-top: solid 10px #4aaaa5;
 }
-
-/* float css */
-.leftfloat {
-    float: left;
-}
 .form-group {
     margin-left: 15px;
 }
 .container {
     background-color: white;
     background-size: cover;
-    width: 700px;
+    width: 100%;
     margin-left: 30px;
     margin-top: 75px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.aboutme {
+    color: #4aaaa5;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
 /* padding is putting a space between picture and text */
-.aboutme img {
+.aboutpic img {
     padding-right:15px;
     padding-bottom:10px;
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
 }
-
 .btn-primary {
     border-radius: 0;
     background-color: #4aaaa5;

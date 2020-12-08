@@ -10,6 +10,11 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <!-- added a background image and put a container inside-->
@@ -50,39 +55,55 @@
     </nav>
     <!-- changed the container to flex and allowing it to fill up all available space -->
     <!-- container has one row and one column - with two sub rows -->
-    <main class="container flex-grow-1 min-vh-75 flex-shrink-0">
+    <main class="container flex-grow-1 flex-shrink-0">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-md-12">
           <section class="row">
-            <article class="col-sm-12">
-              <h1 class="prime">About me</h1>
+            <article class="col-md-12">
+              <h1 class="aboutme">About me</h1>
               <hr />
             </article>
           </section>
           <section class="row">
-            <article class="col-sm-12 aboutme">
+            <article class="col-md-12 aboutpic">
               <!-- made the image left float so the text will wrap -->
-              <img src="http://placekitten.com/g/350/350" alt="Picture of John Erler" class="leftfloat" />
+              <img
+                src="./assets/images/hs.jpg"
+                alt="Picture of John Erler"
+                class="float-left"
+              />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                culpa cum dolorem soluta optio voluptas, totam facilis quae
-                dolorum omnis pariatur necessitatibus voluptatibus rerum
-                accusantium aliquid voluptatum debitis delectus unde voluptatem
-                enim iste asperiores dignissimos architecto? Dolore quibusdam
-                architecto nobis repellat at, neque iusto? Deserunt aliquid eius
-                placeat earum dolorum tempore reiciendis fuga nihil. Inventore
-                harum velit blanditiis tempora libero placeat aut praesentium
-                facere id, ducimus quod exercitationem at quisquam, accusamus
-                impedit cum quam repellendus rerum? Commodi optio facilis iure.
-                Commodi reiciendis doloribus sit debitis unde ullam molestiae
-                iusto rem quas nesciunt corrupti corporis culpa placeat, illo
-                saepe dolorem blanditiis?
+                John Erler is a enrollee of the Georgia Tech Boot Camp, a
+                leading bootcamp that is in the greater Atlanta area.
+              </p>
+              <p>
+                John comes has a bachelor of science in chemistry, and he comes
+                from a background of environmental chemistry, specializing in
+                air and water analysis for contaminates.
+              </p>
+              <p>
+                John has been working to transition into the space of software
+                development. He has taken the
+                <a
+                  src="https://cs50.harvard.edu/x/2020/https://cs50.harvard.edu/x/2020/"
+                  >Harvard cs50 class</a
+                >
+                and has striven for being a creative, flexible, and driven
+                student in this endeavor.
+              </p>
+
+              <p>
+                While not learning to develop code, he enjoys reading books,
+                watching the Mandolorian, and cooking. He has a side project of
+                quality testing board games that friends produce. One day he
+                inspires to make his own boardgame.
               </p>
             </article>
           </section>
         </div>
       </div>
     </main>
+    <!-- telling the footer to take as little room as possible -->
     <!-- https://bootstrapious.com/p/bootstrap-sticky-footer for the footer. -->
     <footer class="footer flex-shrink-0">
       <p>Copyright!</p>
