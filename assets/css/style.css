@@ -14,11 +14,12 @@
 body {
     background-image: url("../images/bg.png");
 }
+/* setting the padding and color of my horizontal bar */
 hr {
     color: #4aaaa5;
     padding: 5px, 0px, 5px, 0px;
 }
-
+/* css to help get my sticky footer running plus customization */
 footer {
     color: #4aaaa5;
     font-family: 'Times New Roman', Times, serif;
@@ -33,9 +34,11 @@ footer {
     background-color: #666666;
     border-top: solid 10px #4aaaa5;
 }
+/* moving my groups in the contact form right a bit */
 .form-group {
     margin-left: 15px;
 }
+/* base customization of the container grid */
 .container {
     background-color: white;
     background-size: cover;
@@ -45,7 +48,9 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+/* this is mostly the header css */
 .aboutme {
+    margin-left: 10px;
     color: #4aaaa5;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -61,9 +66,20 @@ footer {
     width: 250px;
     object-fit: contain;
 }
+/* making that button square and colored teal */
 .btn-primary {
     border-radius: 0;
     background-color: #4aaaa5;
+}
+/* making those images fit and behave */
+.portfolioimages {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+/* making the form container box not SO big */
+#form {
+    width: 500px;
 }
 
 
